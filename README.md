@@ -1,16 +1,88 @@
-# world_travel_app
+# 🌍 **World Travel App**
 
-A new Flutter project.
+World Travel App is a clean and modern Flutter project showcasing a full authentication flow with beautiful UI, reusable widgets, and smooth onboarding experiences.
+Designed to be simple, scalable, and easy to customize for real projects.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ **Features**
 
-A few resources to get you started if this is your first Flutter project:
+* 🚀 Modern Splash Screen
+* 📝 3-step Onboarding flow
+* 🔐 Login & Signup screens
+* 📧 Forget Password + Verification Code screens
+* 🎨 Reusable widgets:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+  * CustomContainer
+  * CustomText
+  * CustomTextField
+* 🧱 Clean project structure & scalable architecture
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🎨 **UI Design (Figma)**
+
+The full app UI is available on Figma:
+
+👉 **[https://www.figma.com/design/wEDwpoSwqCwIQgsynQPpFp/World_Travel_UI](https://www.figma.com/design/wEDwpoSwqCwIQgsynQPpFp/World_Travel_UI)**
+
+---
+
+## 🛠️ **Requirements**
+
+* Flutter SDK **>= 3.29.0**
+* Dart SDK **>= 3.9.2 < 4.0.0**
+
+---
+
+## 📦 **Packages Used**
+
+```yaml
+google_fonts:
+gap:
+pin_code_fields:
+```
+
+---
+
+## ⚙️ **Installation**
+
+```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/world_travel_app.git
+
+# Navigate to project folder
+cd world_travel_app
+
+# Install dependencies
+flutter pub get
+
+# Run the app
+flutter run
+```
+
+---
+
+## 📂 **Project Structure**
+
+```
+lib/
+│── pages/
+│   ├── splash_screen.dart
+│   ├── onboarding_1.dart
+│   ├── onboarding_2.dart
+│   ├── onboarding_3.dart
+│   ├── login_page.dart
+│   ├── signup_page.dart
+│   ├── forget_password.dart
+│   ├── verify_code.dart
+│
+│── widgets/
+│   ├── custom_container.dart
+│   ├── custom_text.dart
+│   └── custom_textfield.dart
+│
+└── main.dart
+```
+
+---
