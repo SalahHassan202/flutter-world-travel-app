@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:world_travel_app/models/on_boarding_data.dart';
-import 'package:world_travel_app/pages/sign_up_screen.dart';
+import 'package:world_travel_app/pages/login_screen.dart';
 import 'package:world_travel_app/widgets/primary_color.dart';
 
 class OnBoardingScreen extends StatefulWidget {
