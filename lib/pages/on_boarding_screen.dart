@@ -21,28 +21,30 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
       backgroundColor: Colors.white,
       body: Column(
         children: [
-          PageView.builder(
-            controller: _controller,
-            itemCount: onBoardingList.length,
-            onPageChanged: (index) {
-              setState(() {
-                _currentPage = index;
-              });
-            },
-            itemBuilder: (context, index) => Column(
-              children: [
-                Gap(50),
-                Image.asset(onBoardingList[index].image, width: 350),
-                Text(
-                  onBoardingList[index].text,
-                  style: GoogleFonts.poppins(
-                    textStyle: TextStyle(
-                      fontSize: 34,
-                      fontWeight: FontWeight.w800,
+          Expanded(
+            child: PageView.builder(
+              controller: _controller,
+              itemCount: onBoardingList.length,
+              onPageChanged: (index) {
+                setState(() {
+                  _currentPage = index;
+                });
+              },
+              itemBuilder: (context, index) => Column(
+                children: [
+                  Gap(80),
+                  Image.asset(onBoardingList[index].image, width: 350),
+                  Text(
+                    onBoardingList[index].text,
+                    style: GoogleFonts.poppins(
+                      textStyle: TextStyle(
+                        fontSize: 32,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           Padding(
