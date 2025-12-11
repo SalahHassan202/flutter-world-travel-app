@@ -12,6 +12,7 @@ class HomeScreen extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
+            Gap(170),
             CustomText(text: 'Welcome to Home'),
             Gap(40),
             Image.asset('assets/home.png'),
