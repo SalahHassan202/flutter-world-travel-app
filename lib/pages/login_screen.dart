@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:world_travel_app/pages/forget_password_screen.dart';
+import 'package:world_travel_app/pages/home_screen.dart';
+import 'package:world_travel_app/pages/sign_up_screen.dart';
 import 'package:world_travel_app/widgets/custom_container.dart';
 import 'package:world_travel_app/widgets/custom_text.dart';
 import 'package:world_travel_app/widgets/custom_text_field.dart';
@@ -22,6 +24,7 @@ class _LoginScreenState extends State<LoginScreen> {
       backgroundColor: Colors.white,
       body: Center(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Gap(80),
             Image.asset(
@@ -57,7 +60,7 @@ class _LoginScreenState extends State<LoginScreen> {
             Gap(5),
 
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10),
+              padding: const EdgeInsets.symmetric(horizontal: 30),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -143,8 +146,31 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             ),
             Gap(60),
-            CustomContainer(text: 'Done'),
-            Gap(15),
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (c) => HomeScreen()),
+                );
+              },
+              child: CustomContainer(text: 'Done'),
+            ),
+            Gap(20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text('Don’t have an account? '),
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (c) => SignUp()),
+                    );
+                  },
+                  child: Text('Sign up', style: TextStyle(color: primaryColor)),
+                ),
+              ],
+            ),
           ],
         ),
       ),
