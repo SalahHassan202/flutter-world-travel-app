@@ -14,13 +14,15 @@ class CustomContainer extends StatelessWidget {
         color: Colors.black,
         borderRadius: BorderRadius.circular(20),
       ),
-      child: Text(
-        text,
-        style: GoogleFonts.fredoka(
-          textStyle: TextStyle(
-            fontSize: 19,
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
+      child: Center(
+        child: Text(
+          text,
+          style: GoogleFonts.fredoka(
+            textStyle: TextStyle(
+              fontSize: 19,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),
           ),
         ),
       ),
